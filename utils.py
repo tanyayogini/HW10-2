@@ -25,7 +25,7 @@ def get_by_pk(candidates, pk):
     возвращает информацию о кандидате в формате строки Фото, Имя, Позиция, Навыки"""
     for candidate in candidates:
         if candidate["pk"] == pk:
-            return f"<img src='({candidate['picture']})'>\n"\
+            return f"<img src='{candidate['picture']}'>\n"\
                    f"<pre>{candidate['name']}\n"\
                    f"{candidate['position']}\n"\
                    f"{candidate['skills']}</pre>"
